@@ -14,7 +14,11 @@ export default class App extends Component {
     this.state = {
       
     };
+    this.sendMessage = this.sendMessage.bind(this);
+  }
 
+  sendMessage(text) {
+    console.log(text);
   }
 
   render() {
@@ -23,7 +27,8 @@ export default class App extends Component {
       <div className="chat-app">
         <Title />
         <MessageList />
-        <SendMessageForm />
+        <SendMessageForm 
+            sendMessage={this.sendMessage}/>
       </div>
     );
   }
