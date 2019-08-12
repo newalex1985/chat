@@ -1,3 +1,20 @@
 .message-list {
     background-color: beige;
+    height: 500px;
+    overflow: auto;
+}
+
+.message {
+    list-style-type: none;
+}
+
+.text-message {
+    background-color: aqua;
+    border-radius: 20%;
+    padding: 1px;
+}
+
+.author-message {
+    font-style: italic;
+    color: rgb(133, 17, 156);
 }
